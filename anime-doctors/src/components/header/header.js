@@ -22,7 +22,7 @@ class Header extends Component<Props> {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <img src={Logo} alt="smoopit-logo" height="25px" width="auto" />
+              <img src={Logo} alt="smoopit-logo" height="100px" width="auto" />
             </Link>
           </div>
 

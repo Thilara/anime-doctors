@@ -1,10 +1,10 @@
 {
-    "slug": "clarke-griffin",
-    "name": "Clarke Griffin",
-    "title": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+    "slug": "marly",
+    "name": "Marly",
+    "title": "Dr(a) Girafinha",
     "timestamp": 1559086243000,
-    "avatar": "../images/clarke-griffin.png",
-    "position": "Founder - Clarke Models Inc",
+    "avatar": "../images/marly.jpeg",
+    "position": "Líder",
     "answers": [
         {
             "questionId": "1",
@@ -45,5 +45,4 @@
             "url": "#"
         }
     ]
-
 }

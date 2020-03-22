@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `smooper-interviews-template`,
-        short_name: `interviews`,
+        name: `smooper-volunteers-template`,
+        short_name: `volunteers`,
         start_url: `/`,
         background_color: `#f6f9fc`,
         theme_color: `#377dff`,

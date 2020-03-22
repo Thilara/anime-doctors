@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo/seo';
-import './interview.scss';
+import './voluntary.scss';
 import Share from '../../components/share/share';
 
 export const query = graphql`
@@ -31,50 +31,49 @@ export const query = graphql`
         url
       }
     }
-    allQuestionsJson {
+    allSchedulesJson {
       nodes {
         questionId
-        question
+        schedule
         slug
       }
     }
   }
 `;
 
-const Interview = ({ data, location }) => {
-  const interview = data.volunteersJson;
-  const questions = data.allQuestionsJson.nodes;
+const Voluntary = ({ data }) => {
+  const voluntary = data.volunteersJson;
+  const schedules = data.allSchedulesJson.nodes;
   return (
     <Layout>
       <SEO
-        title={`${interview.name} | Expert Interviews by Smooper`}
+        title={`${voluntary.name} | Expert Volunteers by Smooper`}
         keywords={[
-          `interview`,
-          interview.name,
+          `voluntary`,
+          voluntary.name,
           `startups`,
           `marketing`,
           `social media expert`,
           `facebook expert`,
           `twitter expert`,
         ]}
-        imageURL={interview.avatar.publicURL}
+        imageURL={voluntary.avatar.publicURL}
       />
       <section>
         <div className="container">
-          <div className="interview-page__item-block has-text-centered">
-            <div className="quotemark">„</div>
-            <p className="is-size-3">{interview.title}</p>
+          <div className="voluntary-page__item-block has-text-centered">
+            <div><p className="is-size-3">{voluntary.title}</p></div>
           </div>
-          <div className="interview-page__item-block interview-page__user-intro">
+          <div className="voluntary-page__item-block voluntary-page__user-intro">
             <Image
-              fluid={interview.avatar.childImageSharp.fluid}
-              alt={interview.title}
+              fluid={voluntary.avatar.childImageSharp.fluid}
+              alt={voluntary.title}
               style={{ width: 72, height: 72, borderRadius: '50%' }}
             />
-            <p className="is-size-4 remove-margin-bottom">{interview.name}</p>
-            <p className="is-size-6">{interview.position}</p>
+            <p className="is-size-4 remove-margin-bottom">{voluntary.name}</p>
+            <p className="is-size-6">{voluntary.position}</p>
             <div className="buttons are-small">
-              {interview.links.map((item, i) => (
+              {voluntary.links.map((item, i) => (
                 <a
                   href={item.url}
                   key={i}
@@ -87,18 +86,18 @@ const Interview = ({ data, location }) => {
               ))}
             </div>
             <Share
-              title={`${interview.name} at Expert Interviews by Smooper`}
-              pageURL={`/interview/${interview.slug}`}
+              title={`${voluntary.name} at Expert Volunteers by Smooper`}
+              pageURL={`/voluntary/${voluntary.slug}`}
             />
           </div>
         </div>
       </section>
 
       <div className="container" style={{ marginTop: '3rem' }}>
-        <div className="interview-page__item-block">
-          {interview.answers.map(item => {
-            const questionObject =
-              (questions || []).find(q => q.questionId === item.questionId) ||
+        <div className="voluntary-page__item-block">
+          {voluntary.answers.map(item => {
+            const scheduleObject =
+              (schedules || []).find(q => q.questionId === item.questionId) ||
               {};
 
             return (
@@ -108,18 +107,18 @@ const Interview = ({ data, location }) => {
                 style={{ marginBottom: '2rem' }}
               >
                 <p
-                  className="is-size-5 interview-page__question"
+                  className="is-size-5 voluntary-page__question"
                   style={{ color: 'black' }}
                 >
-                  {questionObject.question}
+                  {scheduleObject.schedule}
                 </p>
 
-                <p className="interview-page__answer">
-                  <i>{interview.name}</i> - <span dangerouslySetInnerHTML={{__html: item.answer}}></span>
+                <p className="voluntary-page__answer">
+                  <i>{voluntary.name}</i> - <span dangerouslySetInnerHTML={{__html: item.answer}}></span>
                 </p>
 
-                <div className="interview-page__action">
-                  <Link to={`/question/${questionObject.slug}`}>
+                <div className="voluntary-page__action">
+                  <Link to={`/schedule/${scheduleObject.slug}`}>
                     <span className="button is-small is-primary is-outlined">
                       View More Answers
                     </span>
@@ -134,4 +133,4 @@ const Interview = ({ data, location }) => {
   );
 };
 
-export default Interview;
+export default Voluntary;

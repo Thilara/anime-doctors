@@ -1,10 +1,10 @@
  {
-    "slug": "marcus-kane",
-    "name": "Marcus Kane",
-    "title": "What is great about entrepreneurship is that entrepreneurs create the tangible from the intangible.",
+    "slug": "sueli",
+    "name": "Sueli",
+    "title": "Dr(a) Sussuca",
     "timestamp": 1550575179154,
-    "avatar": "../images/marcus-kane.png",
-    "position": "Founder & CEO - Arc Software",
+    "avatar": "../images/sueli.jpeg",
+    "position": "Líder",
     "answers": [
         {
             "questionId": "1",
@@ -45,5 +45,4 @@
             "url": "#"
         }
     ]
-
 }

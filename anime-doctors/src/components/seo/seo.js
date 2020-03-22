@@ -58,7 +58,7 @@ function SEO({ description, lang, meta, keywords, title, imageURL, pageURL}) {
         },
         {
           property: `og:site_name`,
-          content: `Interviews By Smooper`,
+          content: `Volunteers By Smooper`,
         },
         {
           name: `twitter:card`,

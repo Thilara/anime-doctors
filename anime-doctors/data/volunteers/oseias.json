@@ -1,10 +1,10 @@
 {
-    "slug": "cassie-mc-coy",
-    "name": "Cassie McCoy",
-    "title": "Success is no accident. It is hard work, perseverance, learning, studying, & sacrifice.",
+    "slug": "oseias",
+    "name": "Oseias",
+    "title": "Dr Barriga",
     "timestamp": 1559935658000,
-    "avatar": "../images/cassie-mc-coy.png",
-    "position": "Entrepreneur, Dreamer, Developer",
+    "avatar": "../images/oseias.jpeg",
+    "position": "Presidente",
     "answers": [
         {
             "questionId": "1",
@@ -41,5 +41,4 @@
             "url": "#"
         }
     ]
-
 }

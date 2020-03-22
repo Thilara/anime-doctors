@@ -1,6 +1,6 @@
 {
-  "name": "smooper-interviews",
-  "description": "Smooper Interviews",
+  "name": "smooper-volunteers",
+  "description": "Smooper Volunteers",
   "version": "0.1.0",
   "author": "Smooper <contact@smooper.com>",
   "dependencies": {

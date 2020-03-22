@@ -3,16 +3,16 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo/seo';
-import InterviewGrid from '../components/interview-grid/interview-grid';
+import VoluntaryGrid from '../components/voluntary-grid/voluntary-grid';
 
 export default ({ data, location }) => {
-  const interviews = data.allVolunteersJson.nodes;
+  const volunteers = data.allVolunteersJson.nodes;
 
   return (
     <Layout>
       <SEO
-        title="Interview Template by Smooper"
-        keywords={[`interviews`, `entrepreneurs`, `startups`]}
+        title="Voluntary Template by Smooper"
+        keywords={[`volunteers`, `entrepreneurs`, `startups`]}
         imageURL={data.file.publicURL}
       />
       <section className="hero">
@@ -26,10 +26,6 @@ export default ({ data, location }) => {
                 fontWeight: 400,
               }}
             >
-              Interview Template by{' '}
-              <span style={{ textDecoration: 'underline' }}>
-                <a href="https://www.smooper.com">smooper.com</a>
-              </span>
             </h1>
             <h2
               className="is-size-4"
@@ -39,13 +35,13 @@ export default ({ data, location }) => {
                 fontWeight: 400,
               }}
             >
-              The perfect Q&A template for your website or blog
+              Voluntários do Anime Doctors
             </h2>
           </div>
         </div>
       </section>
       <div style={{ margin: '1rem' }}>
-        <InterviewGrid items={interviews} />
+        <VoluntaryGrid items={volunteers} />
       </div>
     </Layout>
   );
@@ -53,7 +49,7 @@ export default ({ data, location }) => {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "images/logo-og.png" }) {
+    file(relativePath: { eq: "images/logo.png" }) {
       publicURL
     }
     allVolunteersJson(sort: { fields: timestamp, order: DESC }) {

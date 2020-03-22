@@ -14,7 +14,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             }
           }
         }
-        allQuestionsJson {
+        allSchedulesJson {
           nodes {
             slug
           }
@@ -35,15 +35,14 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
     })
 
-    results.data.allQuestionsJson.nodes.forEach(question => {
+    results.data.allSchedulesJson.nodes.forEach(schedule => {
 
       createPage({
-        path: `/question/${question.slug}/`,
-        component: require.resolve("./src/templates/question/question.js"),
+        path: `/schedule/${schedule.slug}/`,
+        component: require.resolve("./src/templates/schedule/schedule.js"),
         context: {
-          slug: question.slug
+          slug: schedule.slug
         },
       });
-
     })
   };

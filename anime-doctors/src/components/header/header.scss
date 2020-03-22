@@ -5,11 +5,12 @@
     display: flex !important;
     justify-content: space-between;
   }
-  
+
   .navbar-item {
     padding: 20px 12px;
     img {
-      height: 25px;
+      height: 100px;
+      max-height: none;
     }
     &:not(:last-child) {
       padding-right: 1.5rem;

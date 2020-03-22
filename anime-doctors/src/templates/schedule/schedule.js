@@ -5,16 +5,16 @@ import Image from 'gatsby-image';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo/seo';
-import './question.scss';
+import './schedule.scss';
 
 export const query = graphql`
   query($slug: String!) {
-    questionsJson(slug: { eq: $slug }) {
-      question
+    schedulesJson(slug: { eq: $slug }) {
+      schedule
       questionId
       slug
     }
-    file(relativePath: { eq: "images/logo-og.png" }) {
+    file(relativePath: { eq: "images/logo.png" }) {
       publicURL
     }
     allVolunteersJson(sort: { fields: timestamp, order: DESC }) {
@@ -40,9 +40,9 @@ export const query = graphql`
   }
 `;
 
-const getAnswers = (allInterviewsObject, questionId) => {
+const getAnswers = (allVolunteersObject, questionId) => {
   const answers: [] = [];
-  allInterviewsObject.forEach(element => {
+  allVolunteersObject.forEach(element => {
     const answerObject = element.answers.find(i => i.questionId === questionId);
     if (answerObject) {
       answers.push({
@@ -58,8 +58,8 @@ const getAnswers = (allInterviewsObject, questionId) => {
   return answers;
 };
 
-const Interview = ({ data, location }) => {
-  const questionObject = data.questionsJson;
+const Voluntary = ({ data }) => {
+  const questionObject = data.schedulesJson;
   const answers = getAnswers(
     data.allVolunteersJson.nodes,
     questionObject.questionId
@@ -67,9 +67,9 @@ const Interview = ({ data, location }) => {
   return (
     <Layout>
       <SEO
-        title={questionObject.question}
+        title={questionObject.schedule}
         keywords={[
-          `interview`,
+          `voluntary`,
           `startups`,
           `marketing`,
           `social media expert`,
@@ -81,11 +81,11 @@ const Interview = ({ data, location }) => {
       <div className="container">
         <br />
         <br />
-        <div className="question-page__item-block">
-          <p className="is-size-3">{questionObject.question}</p>
+        <div className="schedule-page__item-block">
+          <p className="is-size-3">{questionObject.schedule}</p>
         </div>
         <br />
-        <div className="question-page__number has-text-centered">
+        <div className="schedule-page__number has-text-centered">
           <div className="tags has-addons" style={{ display: 'inline-block' }}>
             <span className="tag is-dark">{answers.length}</span>
             <span className="tag is-primary">Answers</span>
@@ -96,15 +96,15 @@ const Interview = ({ data, location }) => {
       <br />
       <br />
       <div className="container">
-        <div className="question-page__item-block">
+        <div className="schedule-page__item-block">
           {answers.map(item => (
-            <div className="box question-page__answer-block" key={item.slug}>
-              <p className="question-page__answer-text is-size-5">
+            <div className="box schedule-page__answer-block" key={item.slug}>
+              <p className="schedule-page__answer-text is-size-5">
                 {item.answer}
               </p>
 
-              <Link to={`/interview/${item.slug}`} style={{ color: '#666' }}>
-                <div className="media remove-margin-bottom question-page__profile-block">
+              <Link to={`/voluntary/${item.slug}`} style={{ color: '#666' }}>
+                <div className="media remove-margin-bottom schedule-page__profile-block">
                   <Image
                     fluid={item.avatar.childImageSharp.fluid}
                     alt={item.item}
@@ -141,4 +141,4 @@ const Interview = ({ data, location }) => {
   );
 };
 
-export default Interview;
+export default Voluntary;

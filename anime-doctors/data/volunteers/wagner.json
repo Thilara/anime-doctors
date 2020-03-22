@@ -1,10 +1,10 @@
 {
-    "slug": "octavia-blake",
-    "name": "Octavia Blake",
-    "title": "Entrepreneurship is a muscle, and winning is an endurance game.",
+    "slug": "wagner",
+    "name": "Wagner",
+    "title": "Dr Piquenique",
     "timestamp": 1559935658000,
-    "avatar": "../images/octavia-blake.png",
-    "position": "Serial Entrepreneur",
+    "avatar": "../images/wagner.jpeg",
+    "position": "Vice Presidente",
     "answers": [
         {
             "questionId": "1",
@@ -41,5 +41,4 @@
             "url": "#"
           }
     ]
-
 }
