@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/home/thilara.araujo/Projects/personal/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/thilara.araujo/Projects/thilara.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/thilara.araujo/Projects/personal/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/home/thilara.araujo/Projects/thilara.github.io/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/thilara.araujo/Projects/personal/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/thilara.araujo/Projects/thilara.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"smooper-volunteers-template","short_name":"volunteers","start_url":"/","background_color":"#f6f9fc","theme_color":"#377dff","display":"minimal-ui","icon":"src/images/icon.png"},
     },{
-      plugin: require('/home/thilara.araujo/Projects/personal/node_modules/gatsby-plugin-gtag/gatsby-ssr'),
+      plugin: require('/home/thilara.araujo/Projects/thilara.github.io/node_modules/gatsby-plugin-gtag/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-XXXXXXXXX-Y","head":true,"anonymize":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
