@@ -1,6 +1,7 @@
 const siteConfig = require('./config.js');
 
 module.exports = {
+  pathPrefix: "/anime-doctors",
   siteMetadata: {
     title: siteConfig.title,
     description: siteConfig.description,
