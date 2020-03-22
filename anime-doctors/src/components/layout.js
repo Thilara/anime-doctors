@@ -10,7 +10,6 @@ import Helmet from 'react-helmet';
 
 import Header from './header/header';
 import './layout.scss';
-import SubscribeForm from './subscribe-form/subscribe-form';
 import Footer from './footer/footer';
 
 type LayoutProps = {
@@ -36,9 +35,6 @@ class Layout extends Component<LayoutProps> {
         </Helmet>
         <Header />
         <div className="content">{this.props.children}</div>
-        <div className="content">
-          <SubscribeForm />
-        </div>
         <Footer />
       </>
     );

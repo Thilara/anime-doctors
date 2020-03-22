@@ -17,9 +17,9 @@ function Share({ title, pageURL}) {
           }
         `
       );
-    
+
       const SocialShare = ({icon, url}) => {
-        return <a target="_blank" rel="noopener noreferrer" href={url} 
+        return <a target="_blank" rel="noopener noreferrer" href={url}
         onClick={() => {
             window.open(url, '', 'width=550,height=435');
             return false;
@@ -31,45 +31,22 @@ function Share({ title, pageURL}) {
   return (
     <div className="share">
         <div className="help-text">
-            Share this on 
+            Share this on
         </div>
         <ul>
-            
             <li>
-                <SocialShare 
-                    icon="fab fa-twitter"
-                    url={`https://twitter.com/intent/tweet?text=${title}&url=${site.siteMetadata.siteUrl}${pageURL}&via=smoopersocial`}
-                />
-            </li>
-
-            <li>
-                <SocialShare 
+                <SocialShare
                     icon="fab fa-facebook-f"
                     url={`https://facebook.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
                 />
             </li>
-            
-            <li>
-                <SocialShare 
-                    icon="fab fa-linkedin-in"
-                    url={`http://www.linkedin.com/shareArticle?mini=true&url=${site.siteMetadata.siteUrl}${pageURL}&title=${title}&summary=${title}`}
-                />
-            </li>
 
             <li>
-                <SocialShare 
-                    icon="fab fa-pinterest-p"
-                    url={`http://pinterest.com/pin/create/button/?description=${title}&url=${site.siteMetadata.siteUrl}${pageURL}`}
+                <SocialShare
+                    icon="fab fa-instagram"
+                    url={`https://instagram.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
                 />
             </li>
-
-            <li>
-                <SocialShare 
-                    icon="fab fa-reddit-alien"
-                    url={`http://www.reddit.com/submit?title=${title}&url=${site.siteMetadata.siteUrl}${pageURL}`}
-                />
-            </li>
-
         </ul>
     </div>
   );

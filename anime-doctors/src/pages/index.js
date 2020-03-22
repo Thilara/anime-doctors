@@ -11,7 +11,7 @@ export default ({ data, location }) => {
   return (
     <Layout>
       <SEO
-        title="Voluntary Template by Smooper"
+        title="Voluntários"
         keywords={[`volunteers`, `entrepreneurs`, `startups`]}
         imageURL={data.file.publicURL}
       />

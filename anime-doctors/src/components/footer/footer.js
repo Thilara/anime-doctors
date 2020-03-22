@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="bottom-bar">
-        With <span className="heart">♥</span> by <a href="https://www.smooper.com">smooper.com</a>
+        Demonstrar amor ao próximo é sinal de um coração bom e generoso <span className="heart">♥</span> ANIME DOCTORS
         <br/>
-        Solve your digital marketing problems through 1 on 1 consultation with experts
+        Organizações sem fins lucrativos
       </div>
     </footer>
   );

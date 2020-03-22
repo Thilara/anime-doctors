@@ -26,7 +26,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       const voluntary = edge.node;
 
       createPage({
-        path: `/voluntary/${voluntary.slug}/`,
+        path: `/voluntario/${voluntary.slug}/`,
         component: require.resolve("./src/templates/voluntary/voluntary.js"),
         context: {
           slug: voluntary.slug

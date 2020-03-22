@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import { OutboundLink } from 'gatsby-plugin-gtag'
+// import { OutboundLink } from 'gatsby-plugin-gtag'
 import Logo from '../../images/logo.png';
 
 import './header.scss';
@@ -11,7 +11,6 @@ type Props = {
 };
 
 class Header extends Component<Props> {
-
   render() {
     return (
       <nav
@@ -27,9 +26,20 @@ class Header extends Component<Props> {
           </div>
 
           <div className="navbar-item">
-            <OutboundLink href="mailto:contact@smooper.com" className="button is-primary">
-              Get featured here
-            </OutboundLink>
+            <div className="share">
+              <ul>
+                <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/animedoctors/"><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div className="share">
+              <ul>
+                <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/animedoctors/"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

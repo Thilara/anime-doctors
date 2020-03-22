@@ -75,6 +75,7 @@ const Voluntary = ({ data }) => {
           `social media expert`,
           `facebook expert`,
           `twitter expert`,
+          `instagram expert`,
         ]}
         imageURL={data.file.publicURL}
       />
@@ -103,7 +104,7 @@ const Voluntary = ({ data }) => {
                 {item.answer}
               </p>
 
-              <Link to={`/voluntary/${item.slug}`} style={{ color: '#666' }}>
+              <Link to={`/voluntario/${item.slug}`} style={{ color: '#666' }}>
                 <div className="media remove-margin-bottom schedule-page__profile-block">
                   <Image
                     fluid={item.avatar.childImageSharp.fluid}
