@@ -34,7 +34,7 @@ export default ({ data }) => {
                 fontWeight: 400,
               }}
             >
-              Voluntários do Anime Doctors
+              Voluntários Anime Doctors
             </h2>
           </div>
       </section>

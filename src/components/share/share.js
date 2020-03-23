@@ -28,24 +28,21 @@ function Share({ pageURL}) {
 
   return (
     <div className="share">
-        <div className="help-text">
-          Redes Sociais
-        </div>
-          <ul>
-            <li>
-              <SocialShare
-                icon="fab fa-facebook-f"
-                url={`https://facebook.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
-              />
-            </li>
+        <ul>
+          <li>
+            <SocialShare
+              icon="fab fa-facebook-f"
+              url={`https://facebook.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
+            />
+          </li>
 
-            <li>
-              <SocialShare
-                icon="fab fa-instagram"
-                url={`https://instagram.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
-              />
-            </li>
-        </ul>
+          <li>
+            <SocialShare
+              icon="fab fa-instagram"
+              url={`https://instagram.com/sharer.php?u=${site.siteMetadata.siteUrl}${pageURL}`}
+            />
+          </li>
+      </ul>
     </div>
   );
 }

@@ -92,7 +92,10 @@ const Voluntary = ({ data }) => {
               (schedules || []).find(q => q.questionId === item.questionId) ||
               {};
 
+            const dateSchedule = new Date(item.date);
+            const dateNow = new Date();
             return (
+              (dateNow < dateSchedule &&
               <div
                 className={`box has-left-border border-left-${item.questionId % 16}`}
                 key={item.questionId}
@@ -116,12 +119,12 @@ const Voluntary = ({ data }) => {
                 <div className="voluntary-page__action">
                   <Link to={`/escalas/${scheduleObject.slug}`}>
                     <span className="button is-small is-primary is-outlined">
-                      Ver escalados no dia
+                      Ver escalados do dia
                     </span>
                   </Link>
                 </div>
               </div>
-            );
+            ));
           })}
         </div>
       </div>
