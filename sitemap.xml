@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/marly/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/oseias/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/sueli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/wagner/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/whats-your-current-position/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/what-will-success-look-like-few-weeks/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/sueli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/voluntario/marly/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/hgi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/hospital-francisco-moran/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/which-social-media-platform-is-working-best/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/what-have-you-found-to-be-the-most-effective-marketing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-volunteers.netlify.com/anime-doctors/escalas/what-are-you-actively-focused-on-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
