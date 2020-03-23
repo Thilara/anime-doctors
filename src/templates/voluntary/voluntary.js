@@ -118,7 +118,7 @@ const Voluntary = ({ data }) => {
                 </p>
 
                 <div className="voluntary-page__action">
-                  <Link to={`/schedule/${scheduleObject.slug}`}>
+                  <Link to={`/escalas/${scheduleObject.slug}`}>
                     <span className="button is-small is-primary is-outlined">
                       Ver escalados no dia
                     </span>

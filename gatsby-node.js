@@ -38,7 +38,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     results.data.allSchedulesJson.nodes.forEach(schedule => {
 
       createPage({
-        path: `/schedule/${schedule.slug}/`,
+        path: `/escalas/${schedule.slug}/`,
         component: require.resolve("./src/templates/schedule/schedule.js"),
         context: {
           slug: schedule.slug
