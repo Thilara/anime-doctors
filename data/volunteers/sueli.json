@@ -8,41 +8,18 @@
     "answers": [
         {
             "questionId": "1",
-            "answer": "I founded Arc Software, an end to end software development company after working for 25 years in the software industry."
+            "location": "Rua Jesuino Joaquim da Silva, S/n - Jardim Nova Itapevi, Itapevi - SP, 06694-230",
+            "date": "10/09/2020"
         },
         {
             "questionId": "2",
-            "answer": "Making sure our customer's love our work completely."
-        },
-        {
-            "questionId": "3",
-            "answer": "Instagram works really well because all our clients are on Instagram."
-        },
-        {
-            "questionId": "4",
-            "answer": "Making an inclusive action plan following the basics principles Segmenting, Targeting, Positioning."
-        },
-        {
-            "questionId": "5",
-            "answer": "Measuring the effectiveness of strategies and their implementation at all levels."
-        },
-        {
-            "questionId": "8",
-            "answer": "Don't be afraid to experiment and take risks in whatever work you do."
-        },
-        {
-            "questionId": "9",
-            "answer": "Our key metric is just happiness. Our customer's happiness and employees happiness, because that's the end goal of life, right? To be happy."
-        },
-        {
-            "questionId": "10",
-            "answer": "My biggest obstacle is connecting with B2B clients, because the gestation period is a lot."
+            "location": "Rua Ângela Mirella, 354 - Jardim Barueri, Barueri - SP, 06463-320",
+            "date": "10/10/2020"
         }
     ],
-    "links": [
+    "contacts": [
         {
-            "displayText": "Visit Clarke Models Inc",
-            "url": "#"
+            "phone": "(11) 984848488"
         }
     ]
 }

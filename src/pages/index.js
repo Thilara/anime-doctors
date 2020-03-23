@@ -16,7 +16,6 @@ export default ({ data }) => {
         imageURL={data.file.publicURL}
       />
       <section className="hero">
-        <div className="hero-body">
           <div className="container has-text-centered">
             <h1
               className="is-size-3"
@@ -38,7 +37,6 @@ export default ({ data }) => {
               Voluntários do Anime Doctors
             </h2>
           </div>
-        </div>
       </section>
       <div style={{ margin: '1rem' }}>
         <VoluntaryGrid items={volunteers} />

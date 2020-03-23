@@ -24,11 +24,11 @@ export const query = graphql`
       }
       answers {
         questionId
-        answer
+        location
+        date
       }
-      links {
-        displayText
-        url
+      contacts {
+        phone
       }
     }
     allSchedulesJson {
@@ -55,7 +55,7 @@ const Voluntary = ({ data }) => {
           `marketing`,
           `social media expert`,
           `facebook expert`,
-          `twitter expert`,
+          `whatsapp expert`
         ]}
         imageURL={voluntary.avatar.publicURL}
       />
@@ -72,17 +72,9 @@ const Voluntary = ({ data }) => {
             />
             <p className="is-size-4 remove-margin-bottom">{voluntary.name}</p>
             <p className="is-size-6">{voluntary.position}</p>
-            <div className="buttons are-small">
-              {voluntary.links.map((item, i) => (
-                <a
-                  href={item.url}
-                  key={i}
-                  className="button is-primary is-outlined"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {item.displayText}
-                </a>
+            <div className="are-small">
+              {voluntary.contacts.map((item) => (
+                <i className="fab fa-whatsapp">{item.phone}</i>
               ))}
             </div>
             <Share
@@ -114,7 +106,11 @@ const Voluntary = ({ data }) => {
                 </p>
 
                 <p className="voluntary-page__answer">
-                  <i>{voluntary.name}</i> - <span dangerouslySetInnerHTML={{__html: item.answer}}></span>
+                  <strong>Data do trabalho voluntário:</strong> <span dangerouslySetInnerHTML={{__html: item.date}}></span>
+                </p>
+
+                <p className="voluntary-page__answer">
+                  <strong>Endereço:</strong> <span dangerouslySetInnerHTML={{__html: item.location}}></span>
                 </p>
 
                 <div className="voluntary-page__action">

@@ -33,7 +33,8 @@ export const query = graphql`
         }
         answers {
           questionId
-          answer
+          location
+          date
         }
       }
     }
@@ -74,35 +75,26 @@ const Voluntary = ({ data }) => {
           `marketing`,
           `social media expert`,
           `facebook expert`,
-          `twitter expert`,
           `instagram expert`,
+          `whatsapp expert`
         ]}
         imageURL={data.file.publicURL}
       />
       <div className="container">
-        <br />
-        <br />
-        <div className="schedule-page__item-block">
-          <p className="is-size-3">{questionObject.schedule}</p>
-        </div>
-        <br />
         <div className="schedule-page__number has-text-centered">
           <div className="tags has-addons" style={{ display: 'inline-block' }}>
             <span className="tag is-dark">{answers.length}</span>
-            <span className="tag is-primary">Answers</span>
+            <span className="tag is-primary">Total de voluntários escalados</span>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
       <div className="container">
         <div className="schedule-page__item-block">
           {answers.map(item => (
             <div className="box schedule-page__answer-block" key={item.slug}>
-              <p className="schedule-page__answer-text is-size-5">
-                {item.answer}
-              </p>
+              {/* <p className="schedule-page__answer-text is-size-5">
+                {item.location}
+              </p> */}
 
               <Link to={`/voluntario/${item.slug}`} style={{ color: '#666' }}>
                 <div className="media remove-margin-bottom schedule-page__profile-block">
@@ -123,7 +115,6 @@ const Voluntary = ({ data }) => {
                   >
                     <div>
                       <p className="is-size-7 remove-margin-bottom">
-                        Answered by{' '}
                         <span style={{ color: 'rgb(55, 124, 255)' }}>
                           {' '}
                           {item.name}{' '}

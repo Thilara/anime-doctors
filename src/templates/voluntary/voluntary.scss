@@ -12,11 +12,15 @@
       border-left-color: #00abc0 !important;
     }
   }
-  &__question {
+  &__schedule {
     margin-bottom: 0.5rem !important;
   }
   &__action {
     text-align: right;
   }
+}
 
+.fa-whatsapp:before {
+  padding-right: 10px;
+  color: #008000;
 }

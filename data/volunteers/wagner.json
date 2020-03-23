@@ -8,37 +8,18 @@
     "answers": [
         {
             "questionId": "1",
-            "answer": "I’m a founder of 4 companies, I work remotely for all my startups which are based out of the U.K. I founded my first company when I was 18 years old"
+            "location": "Rua Jesuino Joaquim da Silva, S/n - Jardim Nova Itapevi, Itapevi - SP, 06694-230",
+            "date": "10/09/2020"
         },
         {
             "questionId": "2",
-            "answer": "I’m working with an acquisition that will be finishing in a few weeks. It’s really exciting to be working with a brand that’ll change the way people will view the market of health."
-        },
-        {
-            "questionId": "3",
-            "answer": "Each of my companies have different channels where their social works best, but without a doubt for most of my startups it’s Instagram. Other channels that do well is Pinterest and LinkedIn."
-        },
-        {
-            "questionId": "7",
-            "answer": "Time management. All my day is planned out perfectly by the minute but it still gets difficult managing 4 companies and 2 kids."
-        },
-        {
-            "questionId": "8",
-            "answer": "Educate yourself. Research, actively become part of the conversation, get creative, have fun."
-        },
-        {
-            "questionId": "10",
-            "answer": "Completing my to do list every day!"
+            "location": "Rua Ângela Mirella, 354 - Jardim Barueri, Barueri - SP, 06463-320",
+            "date": "10/10/2020"
         }
     ],
-    "links": [
+    "contacts": [
         {
-            "displayText": "Octavia's LinkedIn",
-            "url": "#"
-        },
-        {
-            "displayText": "Octavia's Facebook",
-            "url": "#"
-          }
+            "phone": "(11) 984848488"
+        }
     ]
 }
